@@ -4,7 +4,7 @@ if [ -d "/data" ]; then
 fi
 
 echo "getting the file.."
-wget https://raw.githubusercontent.com/academyofdata/data/master/timeseries.csv.gz
+wget -q https://raw.githubusercontent.com/academyofdata/data/master/timeseries.csv.gz
 echo "unzipping it..."
 gunzip timeseries.csv.gz
 echo "splitting it..."
