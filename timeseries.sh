@@ -1,5 +1,8 @@
 #!/bin/bash
-cd /data
+if [ -d "/data" ]; then
+        cd /data
+fi
+
 echo "getting the file.."
 wget https://raw.githubusercontent.com/academyofdata/data/master/timeseries.csv.gz
 echo "unzipping it..."
