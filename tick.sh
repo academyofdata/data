@@ -15,7 +15,7 @@ echo "Starting at $START, with increment $LINES up to $MAX"
 while [ $START -lt $MAX ]
 do
         NEXT=$((START + LINES))
-        sed -n "${START},${NEXT}p" $1 | awk -F"," '{print "INSERT INTO  metro_systems.w_ts(station_id,event_time,temperature) VALUES('\''"  $1 "'\'','\''" $2 "'\''," $3 ");" }' > batch.sql
+        sed -n "${START},${NEXT}p" $1 | awk -F"," '{print "INSERT INTO  twks_keyspace.w_ts(station_id,event_time,temperature) VALUES('\''"  $1 "'\'','\''" $2 "'\''," $3 ");" }' > batch.sql
 	cqlsh < batch.sql
         START=$NEXT
         sleep $DELAY
