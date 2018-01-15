@@ -12,3 +12,6 @@ gunzip -f $ODIR/ratings.csv.gz
 wget https://raw.githubusercontent.com/academyofdata/inputs/master/users.csv -O $ODIR/users.csv
 wget https://raw.githubusercontent.com/academyofdata/inputs/master/weatherdata.csv -O $ODIR/weatherdata.csv
 wget https://raw.githubusercontent.com/academyofdata/inputs/master/weatherdata-ext.csv -O $ODIR/weatherdata-ext.csv
+
+wget https://raw.githubusercontent.com/academyofdata/inputs/master/trx.csv.gz -O $ODIR/trx.csv.gz
+gunzip -f $ODIR/trx.csv.gz
