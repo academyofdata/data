@@ -5,7 +5,7 @@ if [ -d "/data" ]; then
         ODIR="/data"
 fi
 # use wget to download the files
-wget https://raw.githubusercontent.com/academyofdata/data/master/movies.csv -O $ODIR/movies.csv
+wget https://raw.githubusercontent.com/academyofdata/data/master/movies-with-year.csv -O $ODIR/movies.csv
 wget https://raw.githubusercontent.com/academyofdata/inputs/master/ratings2.csv -O $ODIR/ratings_s.csv
 wget https://raw.githubusercontent.com/academyofdata/inputs/master/ratings.csv.gz -O $ODIR/ratings.csv.gz
 gunzip -f $ODIR/ratings.csv.gz
