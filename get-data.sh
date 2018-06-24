@@ -15,3 +15,9 @@ wget https://raw.githubusercontent.com/academyofdata/data/master/weatherdata-ext
 
 wget https://raw.githubusercontent.com/academyofdata/data/master/trx.csv.gz -O $ODIR/trx.csv.gz
 gunzip -f $ODIR/trx.csv.gz
+
+wget https://raw.githubusercontent.com/academyofdata/data/master/wparts.tgz -O $ODIR/wparts.tgz
+tar -xzvf $ODIR/wparts.tgz
+
+wget https://raw.githubusercontent.com/academyofdata/data/master/trx.csv.gz -O $ODIR/weathernew.csv.gz
+gunzip -f $ODIR/weathernew.csv.gz
