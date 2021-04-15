@@ -1,0 +1,5 @@
+day,outlook,temperature,humidity,wind,decision
+1,Sunny,Mild,Low,Weak,Yes
+2,Rain,Cool,High,Strong,No
+3,Sunny,Hot,High,Strong,No
+4,Outcast,Mild,High,Weak,Yes
